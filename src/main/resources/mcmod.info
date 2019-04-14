@@ -6,7 +6,7 @@
   "mcversion": "1.13.2",
   "logoFile": "assets/blocks++/textures/logo.png",
   "url": "minecraftforge.net/",
-  "updateJSON": "minecraftforge.net/versions.json",
+  "updateJSON": "",
   "authorList": ["Amanda Aldrich", "Zira Cook", "Taylor Riccetti"],
   "credits": "Amanda is a butt"
 }]
