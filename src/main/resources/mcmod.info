@@ -1,0 +1,12 @@
+[{
+  "modid": "blocks++",
+  "name": "Blocks++",
+  "description": "Adds extra blocks and stuff",
+  "version": "1.0.0.0",
+  "mcversion": "1.13.2",
+  "logoFile": "assets/blocks++/textures/logo.png",
+  "url": "minecraftforge.net/",
+  "updateJSON": "minecraftforge.net/versions.json",
+  "authorList": ["Amanda Aldrich", "Zira Cook", "Taylor Riccetti"],
+  "credits": "Amanda is a butt"
+}]
