@@ -1,10 +1,10 @@
 [{
-  "modid": "blocks++",
-  "name": "Blocks++",
+  "modid": "blocksplusplus",
+  "name": "BlocksPlusPlus",
   "description": "Adds extra blocks and stuff",
   "version": "1.0.0.0",
   "mcversion": "1.13.2",
-  "logoFile": "assets/blocks++/textures/logo.png",
+  "logoFile": "assets/blocksplusplus/textures/logo.png",
   "url": "minecraftforge.net/",
   "updateJSON": "",
   "authorList": ["Amanda Aldrich", "Zira Cook", "Taylor Riccetti"],
