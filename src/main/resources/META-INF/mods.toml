@@ -6,7 +6,7 @@ modId="blocksplusplus" #mandatory
 version="${file.jarVersion}" #mandatory
 displayName="Blocks++" #mandatory
 displayURL="https://github.com/StrandedOnPlanetPixel/BlocksPlusPlus" #optional
-logoFile="src/resources/assets/blocksplusplus/textures/logo.png"
+logoFile="logo.png"
 authors="Amanda Aldrich, Zira Cook, Taylor Riccetti" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
