@@ -22,6 +22,7 @@ import java.util.stream.Collectors;
 @Mod("blocksplusplus")
 public class BlocksPlusPlus
 {
+    public static final String MOD_ID = "blocksplusplus";
     // Directly reference a log4j logger.
     private static final Logger LOGGER = LogManager.getLogger();
 
