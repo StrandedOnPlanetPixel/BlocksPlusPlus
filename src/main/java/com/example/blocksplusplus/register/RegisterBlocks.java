@@ -1,6 +1,7 @@
 package com.example.blocksplusplus.register;
 
 import com.example.blocksplusplus.BlocksPlusPlus;
+import com.example.blocksplusplus.blocks.CrossbowBlock;
 import net.minecraft.block.Block;
 import net.minecraft.block.SoundType;
 import net.minecraft.block.material.Material;
@@ -21,6 +22,9 @@ import java.util.List;
 public class RegisterBlocks {
     public static final List<Block> BLOCKS = new ArrayList<>();
     public static Block testBlock;
+    public static CrossbowBlock crossbowBlock;
+
+
 
     @SubscribeEvent
     public static void registerBlocks(RegistryEvent.Register<Block> event) {
@@ -28,8 +32,13 @@ public class RegisterBlocks {
 
         testBlock = new Block(Block.Properties.create(Material.WOOD, MaterialColor.BLUE_TERRACOTTA).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.SLIME));
         testBlock.setRegistryName("ziratest");
-
         blockRegistry.register(testBlock);
+
+        crossbowBlock = new CrossbowBlock(Block.Properties.create(Material.WOOD, MaterialColor.WOOD).sound(SoundType.WOOD));
+        crossbowBlock.setRegistryName(crossbowBlock.name);
+
+        blockRegistry.register(crossbowBlock);
+
     }
 
     @SubscribeEvent
@@ -38,5 +47,8 @@ public class RegisterBlocks {
         Item.Properties itemBuilder = (new Item.Properties().group(ItemGroup.COMBAT));
 
         itemRegistry.register((new ItemBlock(testBlock, itemBuilder)).setRegistryName("blah"));
+
+        Item.Properties crossbowItemBuilder = (new Item.Properties().group(ItemGroup.COMBAT));
+        itemRegistry.register((new ItemBlock(crossbowBlock, crossbowItemBuilder)).setRegistryName(crossbowBlock.name));
     }
 }
