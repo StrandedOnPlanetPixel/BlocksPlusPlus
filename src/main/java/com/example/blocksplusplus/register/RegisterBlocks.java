@@ -57,9 +57,9 @@ public class RegisterBlocks {
         Item.Properties crossbowItemBuilder = (new Item.Properties().group(ItemGroup.COMBAT));
         itemRegistry.register((new ItemBlock(crossbowBlock, crossbowItemBuilder)).setRegistryName(crossbowBlock.name));
 
-        //This throws an error, I dunno why yet
-        //Item.Properties stickyTrapItemBuilder = (new Item.Properties().group(ItemGroup.BUILDING_BLOCKS));
-        //itemRegistry.register((new ItemBlock(stickyTrapBlock, stickyTrapItemBuilder)).setRegistryName("ImNotSureWhatToDoHereYet"));
+
+        Item.Properties stickyTrapItemBuilder = (new Item.Properties().group(ItemGroup.BUILDING_BLOCKS));
+        itemRegistry.register((new ItemBlock(stickyTrapBlock, stickyTrapItemBuilder)).setRegistryName("uugh"));
 
 
     }
