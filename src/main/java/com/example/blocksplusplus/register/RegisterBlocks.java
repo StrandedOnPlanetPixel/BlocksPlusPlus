@@ -23,6 +23,7 @@ public class RegisterBlocks {
     public static final List<Block> BLOCKS = new ArrayList<>();
     public static Block testBlock;
     public static CrossbowBlock crossbowBlock;
+    public static Block stickyTrapBlock;
 
 
 
@@ -39,6 +40,10 @@ public class RegisterBlocks {
 
         blockRegistry.register(crossbowBlock);
 
+        stickyTrapBlock = new Block(Block.Properties.create(Material.CARPET, MaterialColor.DIRT).hardnessAndResistance(2.0F, 3.0F).sound(SoundType.SLIME));
+        stickyTrapBlock.setRegistryName("AmandasAmazingStickyTrapOfAwesomeness");
+        blockRegistry.register(stickyTrapBlock);
+
     }
 
     @SubscribeEvent
@@ -50,5 +55,10 @@ public class RegisterBlocks {
 
         Item.Properties crossbowItemBuilder = (new Item.Properties().group(ItemGroup.COMBAT));
         itemRegistry.register((new ItemBlock(crossbowBlock, crossbowItemBuilder)).setRegistryName(crossbowBlock.name));
+
+        Item.Properties stickyTrapItemBuilder = (new Item.Properties().group(ItemGroup.BUILDING_BLOCKS));
+        itemRegistry.register((new ItemBlock(stickyTrapBlock, itemBuilder)).setRegistryName("ImNotSureWhatToDoHereYet"));
+
+
     }
 }
