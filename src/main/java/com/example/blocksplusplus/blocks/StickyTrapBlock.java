@@ -8,4 +8,5 @@ public class StickyTrapBlock extends Block {
     public StickyTrapBlock(Material blockMaterialIn, MaterialColor blockMapColorIn) {
         super(Block.Properties.create( blockMaterialIn, blockMapColorIn));
     }
+
 }
