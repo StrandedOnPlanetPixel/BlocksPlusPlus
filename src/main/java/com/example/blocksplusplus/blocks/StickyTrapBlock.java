@@ -23,6 +23,8 @@ public class StickyTrapBlock extends Block {
 
     public StickyTrapBlock(Material blockMaterialIn, MaterialColor blockMapColorIn) {
         super(Block.Properties.create( blockMaterialIn, blockMapColorIn));
+
+
     }
 
     //This method haunts my dreams
@@ -39,7 +41,9 @@ public class StickyTrapBlock extends Block {
         entityIn.motionY = 0;
 
         entityIn.setVelocity(0,0,0);
-
+        entityIn.collided = true;
+        //entityIn.setPositionAndUpdate(pos.getX(), pos.getY(), pos.getZ());
+        //ran out of time, but notes for later
     }
 
 
