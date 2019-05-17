@@ -32,9 +32,15 @@ public class StickyTrapBlock extends Block {
     //public void onEntityWalk(World worldIn, BlockPos pos, Entity entityIn) {
     public void onEntityCollision(IBlockState state, World worldIn, BlockPos pos, Entity entityIn) {
 
-        entityIn.posX = pos.getX();
-        entityIn.posY = pos.getY();
-        entityIn.posZ = pos.getZ();
+        //Good News: They stick now!
+        //Bad News: They spontaneously die when block is broken
+        //The Assumption: Something with fall damage?
+        //Also, they are slightly offset from the middle of the block which
+        //annoys the heck out of me
+
+        //entityIn.posX = pos.getX();
+        //entityIn.posY = pos.getY();
+        //entityIn.posZ = pos.getZ();
 
         entityIn.motionX = 0;
         entityIn.motionZ = 0;
@@ -42,8 +48,8 @@ public class StickyTrapBlock extends Block {
 
         entityIn.setVelocity(0,0,0);
         entityIn.collided = true;
-        //entityIn.setPositionAndUpdate(pos.getX(), pos.getY(), pos.getZ());
-        //ran out of time, but notes for later
+        entityIn.setPosition(pos.getX(), pos.getY(), pos.getZ());
+
     }
 
 
